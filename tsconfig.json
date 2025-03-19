@@ -1,0 +1,29 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "jsx": "react",
+    "importHelpers": true,
+    "allowJs": true,
+    "checkJs": false,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "typeRoots": [
+      "typings",
+      "node_modules/@types",
+      "node_modules/@expocraft-icons"
+    ],
+    "baseUrl": "./",
+    "lib": ["es2017"],
+    "paths": {
+      "react": ["./node_modules/@types/react"],
+      "@cloudhub-ux/graphql": ["./node_modules/@cloudhub-ux/graphql"],
+      "@expocraft/core": ["/Users/bernardgaitho/@cloudhub/@expocraft/core"],
+      "@sqwiro/app": ["./@sqwiro/app"],
+      "@sqwiro/appcore": ["./@sqwiro/appcore"],
+      "@sqwiro/userapps": ["./@sqwiro/userapps"],
+      "@sqwiro/customapps": ["./@sqwiro/customapps"]
+    }
+  },
+  "include": ["**/*", "nativewind-env.d.ts"],
+  "exclude": ["node_modules", "src/**/*.spec.ts"]
+}
